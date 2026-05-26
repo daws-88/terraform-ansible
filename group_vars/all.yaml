@@ -1,9 +1,10 @@
-MONGODB_HOST: mongodb.daws88s.fun
-MYSQL_HOST: mysql.daws88s.fun
-REDIS_HOST: redis.daws88s.fun
-CATALOGUE_HOST: catalogue.daws88s.fun
-USER_HOST: user.daws88s.fun
-SHIPPING_HOST: shipping.daws88s.fun
-RABBITMQ_HOST: rabbitmq.daws88s.fun
-PAYMENT_HOST: payment.daws88s.fun
-CART_HOST: cart.daws88s.fun
+MONGODB_HOST: mongodb-{{ env }}.daws88s.fun #mongodb-dev.daws88s.fub
+MYSQL_HOST: mysql-{{ env }}.daws88s.fun
+REDIS_HOST: redis-{{ env }}.daws88s.fun
+CATALOGUE_HOST: catalogue-{{ env }}.daws88s.fun
+USER_HOST: user-{{ env }}.daws88s.fun
+SHIPPING_HOST: shipping-{{ env }}.daws88s.fun
+RABBITMQ_HOST: rabbitmq-{{ env }}.daws88s.fun
+PAYMENT_HOST: payment-{{ env }}.daws88s.fun
+CART_HOST: cart-{{ env }}.daws88s.fun
+
