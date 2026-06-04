@@ -1,2 +1,1 @@
-MONGODB_HOST: mongodb.daws88s.fun
-REDIS_HOST: redis.daws88s.fun
+SPECIFIC_VAR: specific-value

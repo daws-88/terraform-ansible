@@ -1,4 +1,3 @@
-CART_HOST: cart.daws88s.fun
-MYSQL_HOST: mysql.daws88s.fun
+SPECIFIC_VAR: specific-value
 MYSQL_USER: root
 MYSQL_PASSWORD: RoboShop@1
