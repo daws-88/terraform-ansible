@@ -3,16 +3,16 @@
     name: common
     tasks_from: app-setup.yaml
 
-- name: Install the latest version of Apache and MariaDB
+- name: Install required packages
   ansible.builtin.dnf:
     name: "{{ item }}"
-  state: latest
+    state: latest
   loop:
-  - openssl
-  - openssl-libs
-  - openssh
-  - openssh-server
-  - openssh-client
+    - openssl
+    - openssl-libs
+    - openssh
+    - openssh-server
+    - openssh-client
 
 - name: pythonetup
   ansible.builtin.import_role:
