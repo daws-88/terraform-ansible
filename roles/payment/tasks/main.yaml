@@ -12,7 +12,7 @@
     - openssl-libs
     - openssh
     - openssh-server
-    - openssh-client
+    - openssh-clients
 
 - name: pythonetup
   ansible.builtin.import_role:
