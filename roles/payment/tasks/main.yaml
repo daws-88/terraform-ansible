@@ -2,17 +2,18 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: app-setup.yaml
-
-# - name: Install required packages
-#   ansible.builtin.package:
-#     name: "{{ item }}"
-#     state: latest
-#   loop:
-#     - openssl
-#     - openssl-libs
-#     # - openssh
-#     # - openssh-server
-#     # - openssh-clients
+    
+- name: Upgrade system crypto and SSH packages
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: latest
+    update_cache: yes
+  loop:
+  - openssl
+  - openssl-libs
+  - openssh
+  - openssh-server
+  - openssh-clients
 
 - name: pythonetup
   ansible.builtin.import_role:
