@@ -3,7 +3,7 @@ MYSQL_HOST: mysql-{{ env }}.daws88s.fun
 REDIS_HOST: redis-{{ env }}.daws88s.fun
 CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.daws88s.fun
 USER_HOST: user.backend-alb-{{ env }}.daws88s.fun
-SHIPPING_HOST: shipping.backend-alb{{ env }}.daws88s.fun
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.daws88s.fun
 RABBITMQ_HOST: rabbitmq-{{ env }}.daws88s.fun
 PAYMENT_HOST: payment.backend-alb-{{ env }}.daws88s.fun
 CART_HOST: cart.backend-alb-{{ env }}.daws88s.fun
